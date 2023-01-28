@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  list-style-type: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.nav a {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Karla";
+  font-weight: 700;
+}
+
+@media screen and (max-width: 730px) {
+  .nav {
+    border-top: 0.1px solid #495e5717;
+  }
+}

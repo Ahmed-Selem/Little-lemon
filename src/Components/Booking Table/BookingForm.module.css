@@ -1,0 +1,60 @@
+.form {
+  padding: 10px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form label {
+  width: 200px;
+  font-size: 15pt;
+  font-weight: 600;
+}
+
+.form input,
+.form select {
+  width: 200px;
+  height: 24px;
+  border-radius: 10px;
+  text-align: center;
+  border-style: none;
+  border: 0.1px solid;
+}
+
+.form button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 220px;
+  height: 40px;
+  background-color: #f4ce14;
+  border-radius: 10px;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #333333;
+}
+
+.article h1 {
+  color: #333333;
+  font-family: "Markazi Text", Times, serif;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article {
+  border-top: 0.8px solid #495e5717;
+  background-color: #edefee;
+}

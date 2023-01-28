@@ -1,0 +1,13 @@
+.header {
+  background-color: #edefee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 8vw 0px 8vw;
+}
+
+.header img {
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

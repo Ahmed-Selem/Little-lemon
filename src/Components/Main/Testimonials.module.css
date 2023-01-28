@@ -1,0 +1,16 @@
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article h2 {
+  text-align: center;
+  color: #333333;
+}
+
+.article {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-top: 0.1px solid #495e5717;
+}

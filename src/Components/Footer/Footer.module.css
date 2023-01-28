@@ -1,0 +1,36 @@
+.footer {
+  background-color: #495e57;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.footer img {
+  border-radius: 16px;
+  width: 300px;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #edefee;
+}
+
+.footer h2 {
+  color: #f4ce14;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer section {
+  width: 130px;
+  padding-left: 30px;
+}
