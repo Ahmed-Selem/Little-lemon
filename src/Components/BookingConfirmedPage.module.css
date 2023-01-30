@@ -1,0 +1,11 @@
+.article {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 600;
+  color: #0c4b00;
+  background-color: #edefee;
+  height: 300px;
+  padding-top: 100px;
+  border-top: 0.1px solid #495e5717;
+  border-bottom: 0.1px solid #495e5717;
+}

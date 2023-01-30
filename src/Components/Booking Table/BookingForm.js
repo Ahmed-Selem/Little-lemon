@@ -2,12 +2,12 @@ import React from "react";
 import classes from "./BookingForm.module.css";
 import { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = ({ OnDatechange, availableTimes, onSubmit }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
-  const [availableTimes, setavailableTimes] = useState([1, 2, 3]);
+
   const [time, setTime] = useState("");
   const [number, setNumber] = useState(1);
   const [occusion, setOccasion] = useState("");
@@ -25,6 +25,8 @@ const BookingForm = () => {
 
   const dateHandler = (e) => {
     setDate(e.target.value);
+    const date = new Date(e.target.value);
+    OnDatechange(date);
   };
 
   const timeHandler = (e) => {
@@ -39,14 +41,15 @@ const BookingForm = () => {
     setOccasion(e.target.value);
   };
 
-  const HandleSubmit = (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
-    console.log("Submitted");
+
+    onSubmit(e.target.value);
   };
   return (
     <article className={classes.article}>
-      <h1>Reservation Information</h1>
-      <form onSubmit={HandleSubmit} className={classes.form}>
+      <h1>Book Now</h1>
+      <form onSubmit={submitForm} className={classes.form}>
         <div>
           <label htmlFor="name">Name : </label>
           <input
@@ -96,12 +99,6 @@ const BookingForm = () => {
             {availableTimes.map((time) => {
               return <option key={time}>{time}</option>;
             })}
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
           </select>
         </div>
         <div>
@@ -130,7 +127,8 @@ const BookingForm = () => {
             <option>Engagement</option>
           </select>
         </div>
-        <button disabled>Submit</button>
+
+        <button onClick={submitForm}>Submit</button>
       </form>
     </article>
   );
