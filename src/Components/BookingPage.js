@@ -22,6 +22,7 @@ function initializeTimes(today) {
 
 const BookingPage = () => {
   const date = new Date();
+
   const [today, setToday] = useState(date);
 
   const [availableTimes, dispatch] = useReducer(

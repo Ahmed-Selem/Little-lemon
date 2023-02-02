@@ -4,8 +4,8 @@ import classes from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <nav className={classes.nav}>
-      <ul>
+    <nav className={classes.nav} aria-label="The Navigation bar of the website">
+      <ul aria-label="The Navigation bar of the website">
         <li>
           <Link to="/">Home</Link>
         </li>

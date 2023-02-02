@@ -4,20 +4,23 @@ import classes from "./BookingAvailableTimes.module.css";
 
 const BookingAvailableTimes = ({ day, availableTimes }) => {
   return (
-    <article className={classes.table}>
+    <article
+      className={classes.table}
+      aria-label="Available times at selected day in the reservation form"
+    >
       <h1>Available Times</h1>
       <table>
-        <thead>
+        {/* <thead>
           <tr>
             <th>Day</th>
             <th>{day}</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {availableTimes.map((time) => {
             return (
               <tr key={time}>
-                <td>time</td>
+                <td>At</td>
                 <td>{time}</td>
               </tr>
             );
