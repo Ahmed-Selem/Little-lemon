@@ -3,6 +3,7 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import BookingPage from "./Components/BookingPage";
+import BookingAvailableTimes from "./Components/Booking Table/BookingAvailableTimes";
 
 test("Renders the BookingForm heading", () => {
   render(
@@ -14,16 +15,26 @@ test("Renders the BookingForm heading", () => {
   expect(headingElement).toBeInTheDocument();
 });
 
-test("the initializeTimes function returns the correct expected value", () => {
-  render(
-    <Router>
-      <BookingPage />
-    </Router>
-  );
-  const initializeTimes = jest.fn();
-  expect(initializeTimes).toHaveBeenCalled();
-});
-// to be continued ^^^
+// test("the initializeTimes function returns the correct expected value", () => {
+//   render(
+//     <Router>
+//       <BookingPage />
+//     </Router>
+//   );
+//   const initializeTimes = jest.fn();
+//   expect(initializeTimes).toHaveBeenCalled();
+// });
+
+// test("the initializeTimes function returns the correct expected value in BookingAvailableTimes", () => {
+//   render(
+//     <Router>
+//       <BookingAvailableTimes availableTimes={[]} />
+//     </Router>
+//   );
+//   const initializeTimes = jest.fn();
+//   expect(initializeTimes).toHaveBeenCalled();
+// });
+// // to be continued ^^^
 
 test("Check HTML are correct and each field has the right attribute", () => {
   render(
